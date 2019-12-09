@@ -3,12 +3,64 @@
 /**
  * Basic typography style for copy text
  */
-body {
+
+ body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: 'Open Sans';
 }
 
-.title {
-  font-family: $font-poppins;
-  font-weight: 600;
+h2 {
+  font-family: 'Poppins';
 }
+
+header {
+  li a {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+.home {
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.about-section {
+  .about {
+    h2 {
+    font-family: 'Poppins';
+    font-weight: 600;  
+    }
+  
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .skill {
+    font-size: 13px;
+  }
+}
+
+// body {
+//   color: $text-color;
+//   font: normal 125% / 1.4 $text-font-stack;
+// }
+
+// .title {
+//   font-family: $font-poppins;
+//   font-weight: 600;
+// }

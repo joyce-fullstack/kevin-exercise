@@ -3,3 +3,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+  background-color: $mint-green;
+
+  nav img {
+    width: 200px;
+    height: 100px;
+  }
+
+  p {
+    color: $white;
+  }
+}

@@ -4,33 +4,395 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.home {
-  transition: all .2s ease-in-out;
+.home-section {
+  background-color: $mint-green;
+  height: auto;
+  padding-top: 210px;
+  padding-bottom: 350px;
   
-  .section-intro {
-    padding: 40px 0;
-
-    text-align: center;
+    .home {
+      max-width: 44%;
+  
+      @media only screen and (max-width : 1820px) {
+        max-width: 48%;
+        }   
+        @media only screen and (max-width : 1657px) {
+          max-width: 60%;
+          }   
+          @media only screen and (max-width : 1310px) {
+            max-width: 70%;
+            }  
+              @media only screen and (max-width : 1135px) {
+              max-width: 80%;
+              }    
+              @media only screen and (max-width : 996px) {
+                max-width: 90%;
+                }  
+                @media only screen and (max-width : 705px) {
+                  max-width: 100%;
+                  }      
+   }
+  
+    .btn {
+      @media only screen and (max-width : 800px) {
+        width: 25%;
+        }    
+        @media only screen and (max-width : 600px) {
+          width: 30%;
+          }  
+          @media only screen and (max-width : 480px) {
+            width: 35%;
+            }  
+            @media only screen and (max-width : 400px) {
+              width: 40%;
+              }  
+              @media only screen and (max-width : 340px) {
+                width: 50%;
+                }  
+                @media only screen and (max-width : 290) {
+                  width: 60%;
+                  }  
+    }
+  
+    p {
+      margin-top: 38px;
+    }
   }
-}
+  
+  // About Section Style
+  .about-section {
+    height: auto;
+    padding-bottom: 100px;
+    background-color: $light-gray;
+  
+    .about {
+      padding: 100px 0;
+      max-width: 43%;
+  
+      @media only screen and (max-width : 1820px) {
+        max-width: 48%;
+        }   
+        @media only screen and (max-width : 1657px) {
+          max-width: 60%;
+          }   
+          @media only screen and (max-width : 1310px) {
+            max-width: 70%;
+            }  
+              @media only screen and (max-width : 1135px) {
+              max-width: 75%;
+              }    
+              @media only screen and (max-width : 996px) {
+                max-width: 80%;
+                }  
+                @media only screen and (max-width : 705px) {
+                  max-width: 85%;
+                  }   
+    }
+  
+    .about-img {
+      width: 542px;
+      height: 650px;
+  
+      @media only screen and (max-width : 992px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        }   
+        @media only screen and (max-width : 600px) {
+          width: 500px;
+          height: 600px;
+          } 
+          @media only screen and (max-width : 530px) {
+            width: 450px;
+            height: 550px;
+            } 
+            @media only screen and (max-width : 480px) {
+              width: 400px;
+              height: 500px;
+              }    
+              @media only screen and (max-width : 430px) {
+                width: 350px;
+                height: 450px;
+              } 
+              @media only screen and (max-width : 380px) {
+                width: 300px;
+                height: 400px;
+              }         
+    }
+  
+    .button-dl {
+      border: 2px solid $mint-green;
+      background-color: $white;
+      color: $mint-green;
+      padding: 12px 30px;
+    }  
+  
+    .skill {
+      p {
+        font-weight: bold;
+      }
+    }
+    
+    // Skillbar
+    .skillbar {
+      width: 100%;
+      background-color: #ddd;
+    }
+    
+    .skills {
+      text-align: right;
+      color: white;
+    }
+    
+    .html-skillbar {
+      width: 90%; 
+      background-color: $mint-green;
+    }
+    .css-skillbar {
+      width: 95%; 
+      background-color: $mint-green;
+    }
+    .ps-skillbar {
+      width: 85%; 
+      background-color: $mint-green;
+    }
+    .wp-skillbar {
+      width: 80%; 
+      background-color: $mint-green;
+    }
+    .jquery-skillbar {
+      width: 55%; 
+      background-color: $mint-green;
+    }
+  }
+  
+  // Service Section
+  .service-section {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  
+    .service {
+      max-width: 45%;
+  
+      @media only screen and (max-width : 1820px) {
+        max-width: 48%;
+        }   
+        @media only screen and (max-width : 1657px) {
+          max-width: 60%;
+          }   
+          @media only screen and (max-width : 1310px) {
+            max-width: 70%;
+            }  
+              @media only screen and (max-width : 1135px) {
+              max-width: 75%;
+              }    
+              @media only screen and (max-width : 996px) {
+                max-width: 80%;
+                }  
+                @media only screen and (max-width : 705px) {
+                  max-width: 85%;
+                  }   
+  
+      p {
+        margin-bottom: 80px;
+      }
+    }
+  
+    //Flexbox
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .flex-container > div {
+      background-color: $light-gray;
+      width: 350px;
+      margin: 10px;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  
+  .portfolio-section {
+    height: auto;
+    padding-bottom: 120px;
+    padding-top: 90px;
+    background-color: $light-gray;
+  
+    .portfolio {
+      max-width: 68%;
+  
+      @media only screen and (max-width : 1820px) {
+        max-width: 75%;
+        }   
+        @media only screen and (max-width : 1657px) {
+          max-width: 80%;
+          }   
+          @media only screen and (max-width : 1310px) {
+            max-width: 85%;
+            }  
+              @media only screen and (max-width : 1135px) {
+              max-width: 87%;
+              }    
+              @media only screen and (max-width : 996px) {
+                max-width: 90%;
+                }  
+                @media only screen and (max-width : 705px) {
+                  max-width: 95%;
+                  }   
+    }
+  
+      // Flexbox
+      .flex-container-port {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .flex-container-port > div {
+        width: 325px;
+        margin: 10px 20px;
+        text-align: center;
+      }
+  
+      .port-image {
+        width: 340px;
+        height: 260px;
+      }
+  
+      .portfolio {
+        p {
+          margin-bottom: 40px;
+        }
+      }
+  }
+  
+  .testimonial-section {
+    height: auto;
+    background-image: url('/assets/images/testimonial-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  
+    h2 {
+      margin-bottom: 45px;
+    }
+  
+    .swiper-container {
+      width: 80%;
+      height: 500px;
+      overflow: hidden;
+      padding-top: 60px;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    } 
+  
+    .swiper-pagination-bullet {
+      background-color: $mint-green;
+    }
+  }
+  
+  
+  .contact-section {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 150px;
+  
+    .contact {
+      max-width: 45%;
+  
+      @media only screen and (max-width : 1820px) {
+        max-width: 48%;
+        }   
+        @media only screen and (max-width : 1657px) {
+          max-width: 60%;
+          }   
+          @media only screen and (max-width : 1310px) {
+            max-width: 70%;
+            }  
+              @media only screen and (max-width : 1135px) {
+              max-width: 75%;
+              }    
+              @media only screen and (max-width : 996px) {
+                max-width: 80%;
+                }  
+                @media only screen and (max-width : 705px) {
+                  max-width: 85%;
+                  }   
+    } 
+  
+    .flex-container-contact {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .flex-container-contact > div {
+      width: 325px;
+      margin: 10px 20px;
+      line-height: 13px;
+      text-align: center;
+    }
+  
+    .btn {
+      padding: 12px 15px;
+      width: 120px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  footer {
+    background-color: $light-gray;
+    padding: 20px;
+  }
+  
+  
+
+// .home {
+//   transition: all .2s ease-in-out;
+  
+//   .section-intro {
+//     padding: 40px 0;
+
+//     text-align: center;
+//   }
+// }
 
 
-.swiper-container {
-  margin-top: 40px;
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
+// .swiper-container {
+//   margin-top: 40px;
+//   width: 500px;
+//   height: 300px;
+//   overflow: hidden;
 
-  border: 2px #007aff solid;
-  border-radius: 3px;
-}
+//   border: 2px #007aff solid;
+//   border-radius: 3px;
+// }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
